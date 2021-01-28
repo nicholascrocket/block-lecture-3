@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 1 Lecture 3</title>
+</head>
+<body>
+    <form>
+        <!--hidden fields are used to valid that the form is
+        from the person you sent the page to-->
+        <input type="hidden" id="form-id" value="eb89x86928764937876346734">
+        <!--Form Fields-->
+        <label for="my-text">Enter Some Text:</label>
+        <input type="text" name="my-text" id="my-text">
+        <br/>
+        website: <input type="text" name="website">
+        <br/>
+        computer: <input type="text" name="comuter">
+        <br/>
+        <hr>
+        <label for="my-password">Password:</label>
+        <input type="password" name="password" id="my-password">
+
+        <br/>
+        <hr>
+        <!--ALWAYS USE LABELS TO ID TEXT-->
+        <!--value is needed to tell server which button is chosen-->
+        <input type="radio" name="gender" id="male" value="m">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="f">
+        <label for="female">Female</label>
+        <br/>
+        <input type="radio" name="season" value="Spring"> Spring <br/>
+        <input type="radio" name="season" value="summer"> Summer <br/>
+        <input type="radio" name="season" value="autumn"> Autumn <br/>
+        <input type="radio" name="season" value="winter"> Winter <br/>
+
+        <br/>
+        <input type="checkbox" name="season" value="Spring"> Spring <br/>
+        <input type="checkbox" name="season" value="summer"> Summer <br/>
+        <input type="checkbox" name="season" value="autumn"> Autumn <br/>
+        <input type="checkbox" name="season" value="winter"> Winter <br/>
+        <br/>
+
+        <label for="my-text-area">Enter some text:</label>
+        <br/>
+        <textarea name="big-text" id="my-text-area">
+this is
+some text
+        </textarea>
+        <hr>
+        <select name="select-food">
+            <option>mexican</option>
+            <option>chinese</option>
+            <option>vietnamnese</option>
+        </select>
+        <select name="select-food[]" multiple="multiple">
+            <option value="mex">mexican</option>
+            <option value="chn">chinese</option>
+            <option value="vit">vietnamnese</option>
+        </select>
+        <br/>
+    
+        <input type="submit"> | <input type="reset">
+    </form>
+    
+</body>
+</html>
